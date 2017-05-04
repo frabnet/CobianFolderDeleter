@@ -5,11 +5,13 @@ Param (
 
 Write-Host "CobianFolderDeleter v1.0" -ForegroundColor Green -BackgroundColor Black
 Write-Host "https://github.com/frabnet/CobianFolderDeleter" -ForegroundColor Green -BackgroundColor Black
-
+Write-Host "---"
 Write-Host "Folders to keep: $Keep"
+Write-Host "Root folder: $RootFolder"
+Write-Host "---"
 
 Write-Host -NoNewLine "Reading folders... "
-$aFolders = Get-ChildItem '.\' -Directory | Sort-Object Name -Descending
+$aFolders = Get-ChildItem "$RootFolder" -Directory | Sort-Object Name -Descending
 Write-Host "$($aFolders.length) folders found."
 
 Write-Host -NoNewLine "Finding unique folders... "
@@ -32,10 +34,10 @@ ForEach ($name in $aUniqueNames) {
             Write-Host -NoNewline "`t$($folder): "
             If ($found -gt $Keep) {                
                 Write-Host "To delete"
-                If ($Run) {
-                    Remove-Item -Recurse -Force $folder         
-                }
                 $deleted++
+                If ($Run) {
+                    Remove-Item -Recurse -Force "$RootFolder\$folder"   
+                }
             } Else {
                 Write-Host "Ok $found"
             }
