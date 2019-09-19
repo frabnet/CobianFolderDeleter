@@ -1,6 +1,6 @@
 # CobianFolderDeleter
 
-This simple script helps you to delete old folders when Cobian Backup don't delete them.
+This simple script helps you to delete old folders when Cobian Backup don't delete them.\
 **NOTE:** This script is tested on PowerShell 4 or greater. You can download v4 from [Microsoft website](https://www.microsoft.com/en-us/download/details.aspx?id=40855).
 
 ## Why
