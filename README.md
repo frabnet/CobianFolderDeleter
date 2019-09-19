@@ -32,7 +32,9 @@ test 2017-01-04
 ## How to run
 
 Run this command on Cobian Backup before or after backup execution as you like.
+
 ```
 c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -Executionpolicy Bypass -File "deleter.ps1" -RootFolder W: -Keep 3 -Run
 ```
+
 Since this is really long command line, you may copy all this in a .cmd file and run only that from Cobian.
