@@ -23,7 +23,7 @@ test 2017-01-05
 test 2017-01-04
 ```
 
-## Command line switches
+## Command line parameters
 
 **-RootFolder** self explanatory, if folder contains spaces please use quotes
 **-Keep** number of most recent folders to keep
