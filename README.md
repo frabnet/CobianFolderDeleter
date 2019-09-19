@@ -25,9 +25,9 @@ test 2017-01-04
 
 ## Command line parameters
 
-**-RootFolder** self explanatory, if folder contains spaces please use quotes
-**-Keep** number of most recent folders to keep
-**-Run** if not specified, the script will just display deletions and not delete anything
+**-RootFolder** self explanatory, if folder contains spaces please use quotes\
+**-Keep** number of most recent folders to keep\
+**-Run** if not specified, the script will just display deletions and not delete anything\
 
 ## How to run
 
